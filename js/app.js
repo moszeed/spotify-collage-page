@@ -217,7 +217,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
       });
       state.spotifyToken = token; // remove token from url
 
-      emit('pushState', '/');
+      emit('pushState', window.location.pathname);
     }
 
     if (!state.spotifyUser) {
